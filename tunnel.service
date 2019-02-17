@@ -1,0 +1,11 @@
+[Unit]
+Description=AutoSSH tunnel service mysql
+After=network.target
+
+[Service]
+User=system
+Environment="AUTOSSH_GATETIME=0"
+ExecStart=/usr/bin/autossh -o "ServerAliveInterval 10" -o "ServerAliveCountMax 3" -N -R 2000:localhost:3306 admin@remoteserver.com -p 22
+
+[Install]
+WantedBy=multi-user.target
