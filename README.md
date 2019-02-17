@@ -1,6 +1,6 @@
 # autossh-tunnel
 
-## Tunnel port via autossh for Ubuntu 16-04 and Ubuntu 18.04
+## Tunnel port via autossh for Ubuntu 16.04 and Ubuntu 18.04
 
 ## Installing
 ```
